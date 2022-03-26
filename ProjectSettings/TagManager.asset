@@ -12,6 +12,7 @@ TagManager:
   - Recycle
   - SortingManager
   - SpawnPoint
+  - TimerManager
   layers:
   - Default
   - TransparentFX

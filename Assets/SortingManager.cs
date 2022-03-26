@@ -6,12 +6,13 @@ public class SortingManager : MonoBehaviour
 {
     private float radius = 2f;
     [HideInInspector] public GameObject trash;
+    private TimerManager timer;
     private GameObject holder;
     [HideInInspector] public bool hasSorted = false;
 
-    private int redScore;
-    private int greenScore;
-    private int yellowScore;
+    [HideInInspector] public int redScore;
+    [HideInInspector] public int greenScore;
+    [HideInInspector] public int yellowScore;
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
@@ -20,6 +21,7 @@ public class SortingManager : MonoBehaviour
     private void Awake()
     {
         holder = GameObject.FindGameObjectWithTag("HoldPoint");
+        timer = GameObject.FindGameObjectWithTag("TimerManager").GetComponent<TimerManager>();
     }
 
     private void Update()
@@ -34,6 +36,7 @@ public class SortingManager : MonoBehaviour
                 {
                     Destroy(trash);
                     redScore++;
+                    timer.totalScore++;
                     Debug.Log("Dangerous = " + redScore);
                     hasSorted = true;
                 }
@@ -41,6 +44,7 @@ public class SortingManager : MonoBehaviour
                 {
                     Destroy(trash);
                     yellowScore++;
+                    timer.totalScore++;
                     Debug.Log("Recycle = " + yellowScore);
                     hasSorted = true;
                 }
@@ -48,6 +52,7 @@ public class SortingManager : MonoBehaviour
                 {
                     Destroy(trash);
                     greenScore++;
+                    timer.totalScore++;
                     Debug.Log("Organic = " + greenScore);
                     hasSorted = true;
                 }
