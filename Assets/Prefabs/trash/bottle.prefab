@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 7094874784146043495}
   - component: {fileID: 8807229468504980963}
   - component: {fileID: 2831447400326474092}
+  - component: {fileID: 3330098464486873199}
   m_Layer: 0
   m_Name: bottle
   m_TagString: Recycle
@@ -208,7 +209,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db1f9ed39805ad4f8f505b4c26fe4cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 0.75
+  radius: 0.6
+--- !u!210 &3330098464486873199
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789113348010050624}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 10
 --- !u!1 &4322557255586609560
 GameObject:
   m_ObjectHideFlags: 0

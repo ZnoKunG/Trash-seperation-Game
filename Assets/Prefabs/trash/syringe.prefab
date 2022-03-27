@@ -297,9 +297,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5355057629446974710}
+  - component: {fileID: 7335169928666213624}
+  - component: {fileID: -1286289635262835564}
   m_Layer: 0
   m_Name: syringe
-  m_TagString: Untagged
+  m_TagString: Dangerous
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -313,7 +315,7 @@ Transform:
   m_GameObject: {fileID: 6296285792789448700}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1172144, y: 0.1172144, z: 0.1172144}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 1789627612430870777}
   - {fileID: 8102077139733596963}
@@ -323,6 +325,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7335169928666213624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6296285792789448700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2db1f9ed39805ad4f8f505b4c26fe4cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 0.6
+--- !u!210 &-1286289635262835564
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6296285792789448700}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 10
 --- !u!1 &7758802107114284710
 GameObject:
   m_ObjectHideFlags: 0
